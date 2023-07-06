@@ -1,6 +1,7 @@
 package com.example.exeption.dto;
 
 import com.example.exeption.model.Member;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 import javax.validation.constraints.Min;
@@ -8,7 +9,9 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
 public class MemberRegisterDto {
+
     @Data
+    @AllArgsConstructor
     public static class Request{
 
         @NotBlank(message = "name은 필수 값입니다.")
